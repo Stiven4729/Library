@@ -1,0 +1,35 @@
+.containerBoocks{
+    display: flex;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    justify-content: center;
+}
+
+.Boocks{
+    background-color: bisque;
+    width: 16em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.title{
+    font-size: 25px;
+    padding-bottom: 1em;
+}
+
+.imageBoock{
+    height: 20em;
+    width: 12em
+}
+
+.textdownboock{
+    display: flex;
+    padding-top: 1em;
+    flex-direction: column;
+    padding-left: 2em;
+    align-items: flex-start;
+}
+
+.info{
+    font-size: 18px;    
+}

@@ -1,0 +1,18 @@
+<p>library works!</p>
+
+<div class="containerBoocks" *ngFor="let boock of boocks">
+    <div class="Boocks">
+        <p class="title">{{boock.title}}</p>
+        <img
+            class="imageBoock"
+            [src]="boock.photo"
+        >
+        <div class="textdownboock">
+            <p class="info">author: {{boock.author}}</p>
+            <p class="info">year: {{boock.year}}</p>
+            <p class="info">gender: {{boock.gender}}</p>
+            <p class="info">Quantity: {{boock.Quantity}}</p>
+            <p class="info">codeISBN: {{boock.codeISBN}}</p>
+        </div>
+    </div>
+</div>
