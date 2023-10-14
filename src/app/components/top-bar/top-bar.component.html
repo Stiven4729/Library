@@ -1,5 +1,9 @@
 <div class="navbar">
-    <a class="Logo" routerLink="">LibrarySGL</a>
-    <a class="option1" onclick="">Users</a>
-    <a class="option2" onclick="">New Library</a>
+        <a class="Logo" routerLink="">LibrarySGL</a>
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
 </div>
+<mat-menu #menu="matMenu" class="containermenu">
+  <button mat-menu-item class="containermenu" routerLink="users-detalls">Users</button>
+  <a mat-menu-item class="containermenu" routerLink="library-detalls">Library-detalls</a>
+</mat-menu>
+

@@ -1,0 +1,64 @@
+<mat-tab-group animationDuration="2000ms">
+    <mat-tab label="Users">
+        <div class="content">
+            <a>Users</a>
+        </div>
+        <app-user></app-user>
+    </mat-tab>
+    <mat-tab label="New">
+        <div class="content">
+            <a>New User</a>
+        </div>
+        <form class="formUser">
+            <label for="title">Name:</label>
+            <input type="text" id="name" name="name" ngModel required>
+
+            <label for="photo">LastName:</label>
+            <input type="text" id="lastName" name="lastName" ngModel required>
+
+            <label for="author">Gmail:</label>
+            <input type="text" id="gmail" name="gmail" ngModel required>
+
+            <label for="year">All Boocks:</label>
+            <input type="number" id="allBoocks" name="allBoocks" ngModel required>
+
+            <label for="gender">ID</label>
+            <input type="text" id="id" name="id" ngModel required>
+
+            <button type="submit">Add User</button>
+        </form>
+    </mat-tab>
+    <mat-tab label="Delete">
+        <div class="content">
+            <a>Delete User</a>
+        </div>
+        <form class="formUser">
+            <label for="codeISBN">ID:</label>
+            <input type="text" id="id" name="id" ngModel required>
+            <button type="submit">Delete User</button>
+        </form>
+    </mat-tab>
+    <mat-tab label="Edit">
+        <div class="content">
+            <a>Edit User</a>
+        </div>
+        <form class="formUser">
+            <label for="title">Name:</label>
+            <input type="text" id="name" name="name" ngModel required>
+
+            <label for="photo">LastName:</label>
+            <input type="text" id="lastName" name="lastName" ngModel required>
+
+            <label for="author">Gmail:</label>
+            <input type="text" id="gmail" name="gmail" ngModel required>
+
+            <label for="year">All Boocks:</label>
+            <input type="number" id="allBoocks" name="allBoocks" ngModel required>
+
+            <label for="gender">ID</label>
+            <input type="text" id="id" name="id" ngModel required>
+
+            <button type="submit">Edit User</button>
+        </form>
+    </mat-tab>
+</mat-tab-group>

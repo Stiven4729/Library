@@ -1,0 +1,26 @@
+
+.containerUsers{
+    display: flex;
+    padding-top: 1em;
+   // padding-bottom: 2em;
+    justify-content: center;
+}
+
+.Users{
+    display: flex;
+    background-color: bisque;
+    width: 22em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info{
+    font-size: 18px;    
+}
+
+.packageToText{
+    display: flex;
+    flex-direction: column;
+}
