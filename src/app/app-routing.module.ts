@@ -4,6 +4,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LibraryDetallsComponent } from './components/library-detalls/library-detalls.component';
 
 import { UserDetallsComponent } from './components/user-detalls/user-detalls.component';
+import { InTheBoxPageComponent } from './components/in-the-box-page/in-the-box-page.component';
 const routes: Routes = [
   {
     path: '', 
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'users-detalls', 
     component: UserDetallsComponent
+  },
+  {
+    path: 'inTheBox-page', 
+    component: InTheBoxPageComponent
   }
 ];
 

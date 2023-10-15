@@ -13,6 +13,7 @@ import { LibraryDetallsComponent } from './components/library-detalls/library-de
 import { BoockService } from './boock.service';
 import { UserComponent } from './components/user/user.component';
 import { UserDetallsComponent } from './components/user-detalls/user-detalls.component';
+import { InTheBoxPageComponent } from './components/in-the-box-page/in-the-box-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UserDetallsComponent } from './components/user-detalls/user-detalls.com
     LibraryDetallsComponent,
     UserComponent,
     UserDetallsComponent,
+    InTheBoxPageComponent,
   ],
   imports: [
     BrowserModule,

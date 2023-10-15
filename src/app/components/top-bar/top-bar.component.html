@@ -1,9 +1,12 @@
 <div class="navbar">
-        <a class="Logo" routerLink="">LibrarySGL</a>
-    <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+  <a class="Logo" routerLink="">LibrarySGL</a>
+  <mat-icon (click)="toggleNav()" class="abrir-menu">menu</mat-icon>
+  <nav class="nav" [ngClass]="{'visible': isNavVisible}">
+    <mat-icon (click)="toggleNav()" aria-hidden="false" fontIcon="close"></mat-icon>
+    <ul class="nav-list">
+      <li><a routerLink="">Home</a></li>
+      <li><a routerLink="users-detalls">Users</a></li>
+      <li><a routerLink="library-detalls">Library-detalls</a></li>
+    </ul>
+  </nav>
 </div>
-<mat-menu #menu="matMenu" class="containermenu">
-  <button mat-menu-item class="containermenu" routerLink="users-detalls">Users</button>
-  <a mat-menu-item class="containermenu" routerLink="library-detalls">Library-detalls</a>
-</mat-menu>
-
