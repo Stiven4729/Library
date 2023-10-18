@@ -10,7 +10,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { LibraryComponent } from './components/library/library.component';
 import { LibraryDetallsComponent } from './components/library-detalls/library-detalls.component';
-import { BoockService } from './boock.service';
+import { BookService } from './book.service';
 import { UserComponent } from './components/user/user.component';
 import { UserDetallsComponent } from './components/user-detalls/user-detalls.component';
 import { InTheBoxPageComponent } from './components/in-the-box-page/in-the-box-page.component';

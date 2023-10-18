@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { boocks } from './boocks';
+import { Component, WritableSignal, effect, signal } from '@angular/core';
+
+import { Book} from './books';
 
 @Component({
   selector: 'app-library',
@@ -9,7 +10,11 @@ import { boocks } from './boocks';
 
 
 export class LibraryComponent {
-  boocks = [...boocks];
 
+   books: WritableSignal<Book[]> = signal(
+    localStorage.getItem('books') ? JSON.parse(localStorage.getItem('books')!) : []
 
+  );
 }
+
+

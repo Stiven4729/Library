@@ -12,5 +12,4 @@ import { users } from './users';
 export class UserComponent {
   users = [...users];
 
-  
 }
