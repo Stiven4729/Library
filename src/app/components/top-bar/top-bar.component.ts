@@ -12,3 +12,4 @@ export class TopBarComponent {
     this.isNavVisible = !this.isNavVisible;
   }
 }
+ 

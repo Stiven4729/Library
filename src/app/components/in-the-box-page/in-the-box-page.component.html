@@ -1,1 +1,35 @@
-<p>No have boocks</p>
+<div>
+    <p>Agregar libro</p>
+    <form #formulario="ngForm" (submit)="onSubmit(formulario.value)">
+      <div>
+        <label>Libro</label>
+        <select name="selectedBookTitle" [(ngModel)]="selectedBookTitle" (ngModelChange)="onBookSelect()">
+          <option *ngFor="let book of books(); let index = index" [value]="book.title">{{ book.title }}</option>
+        </select>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="selectedBook" >
+      <h2>Detalles del libro seleccionado:</h2>
+      <p>Título: {{ selectedBook.title }}</p>
+      <p>Foto: {{ selectedBook.photo }}</p>
+      <p>Autor: {{ selectedBook.author }}</p>
+      <p>Año: {{ selectedBook.year }}</p>
+      <p>Género: {{ selectedBook.gender }}</p>
+      <p>Cantidad: {{ selectedBook.Quantity }}</p>
+      <p>Código ISBN: {{ selectedBook.codeISBN }}</p>
+    </div>
+  </div>
+
+    <div *ngFor="let book of selectedBooks">
+        <h2>Detalles del libro seleccionado:</h2>
+        <p>Título: {{ book.title }}</p>
+        <p>Foto: {{ book.photo }}</p>
+        <p>Autor: {{ book.author }}</p>
+        <p>Año: {{ book.year }}</p>
+        <p>Género: {{ book.gender }}</p>
+        <p>Cantidad: {{ book.Quantity }}</p>
+        <p>Código ISBN: {{ book.codeISBN }}</p>
+      </div>
+      
+  

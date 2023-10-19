@@ -1,13 +1,33 @@
-<div class="containerUsers" *ngFor="let user of users">
-    <div class="Users">
-        <div class="packageToText">
-            <p class="info">Name: {{ user.name}}</p>
-            <p class="info">LastName: {{ user.lastname}}</p>
-            <p class="info">Gmail: {{ user.gmail}}</p>
-            <p class="info">All Boocks: {{ user.allBoocks}}</p>
-            <p class="info">ID: {{ user.id}}</p>
-        </div>
-        <br>
-        <a routerLink="/inTheBox-page">Boocks</a>
-    </div>
+<div class="containerUsers">
+        
+    <table>
+        <thead>
+        <tr>
+            <th class="id">ID</th>
+            <th class="name">Name</th>
+            <th class="lastname">Lastname</th>
+            <th class="gmail">Gmail</th>
+            <th class="allbook">All Books</th>
+            <th class="actions">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users(); let index = index">
+            <td class="id">{{ user.id }}</td>
+            <td class="name">{{ user.name }}</td>
+            <td class="lastname">{{ user.lastname }}</td>
+            <td class="gmail">{{ user.gmail }}</td>
+            <td class="allbook">{{ user.allBoocks }}</td>
+            <td>
+                <button  mat-mini-fab matTooltip="Primary" color="accent" routerLink="/inTheBox-page">
+                    <mat-icon>books</mat-icon>
+                </button>
+                <button  mat-mini-fab matTooltip="Primary" color="accent" (click)="deleteUser(user.id)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 </div>

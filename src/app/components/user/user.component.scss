@@ -1,26 +1,35 @@
-
-.containerUsers{
+.containerUsers {
     display: flex;
     padding-top: 1em;
-   // padding-bottom: 2em;
     justify-content: center;
-}
-
-.Users{
-    display: flex;
-    background-color: bisque;
-    width: 22em;
-    padding-top: 1em;
-    padding-bottom: 1em;
     flex-direction: column;
-    align-items: center;
+}
+  
+table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+}
+  
+th, td {
+    padding: 10px;
+    word-wrap: break-word;
+}
+  
+table, th, td {
+    border: 1px solid black;
 }
 
-.info{
-    font-size: 18px;    
+.name,
+.lastname,
+.gmail{
+    display: none;
 }
 
-.packageToText{
-    display: flex;
-    flex-direction: column;
+
+@media screen and (min-width: 992px) {
+    .name,
+    .gmail{
+        display: table-cell;
+    }
 }

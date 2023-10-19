@@ -37,6 +37,33 @@
     visibility: visible;
 }
 
+.invisible{
+    display: none;
+}
+
 .nav-list{
     list-style-type: none;
+}
+
+/* Aplicar estilos para pantallas grandes */
+@media screen and (min-width: 992px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .invisible{
+        display: block;
+    }
+
+    .navbar1{
+        font-size: 23px;
+        display: flex;  
+        height: 70px;
+        background-color: antiquewhite;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+
 }
